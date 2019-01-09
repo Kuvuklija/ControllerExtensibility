@@ -96,12 +96,14 @@
     <Compile Include="Controllers\ActionInvokerController.cs" />
     <Compile Include="Controllers\CustomController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\SelectorActionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\CustomActionInvoker.cs" />
     <Compile Include="Infrastructure\CustomControllerActivator.cs" />
     <Compile Include="Infrastructure\CustomControllerFactory.cs" />
+    <Compile Include="Infrastructure\LocalAttribute.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -121,6 +123,7 @@
     <Folder Include="Views\ActionInvoker\" />
     <Folder Include="Views\Custom\" />
     <Folder Include="Views\Product\" />
+    <Folder Include="Views\SelectorAction\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

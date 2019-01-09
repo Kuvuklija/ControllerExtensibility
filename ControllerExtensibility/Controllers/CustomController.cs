@@ -14,11 +14,17 @@ namespace ControllerExtensibility.Controllers
                ControllerName="Custom"});
         }
 
+        [ActionName("Enumerate")]
         public ViewResult List() {
             return View("Result", new Result{
                 ControllerName = "Custom",
                 ActionName = "List"
             });
+        }
+
+        [NonAction]
+        public ActionResult MyAction() {
+            return View();
         }
     }
 }
