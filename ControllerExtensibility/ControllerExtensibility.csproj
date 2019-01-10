@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -95,6 +96,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionInvokerController.cs" />
     <Compile Include="Controllers\CustomController.cs" />
+    <Compile Include="Controllers\FastController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SelectorActionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -122,6 +124,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\ActionInvoker\" />
     <Folder Include="Views\Custom\" />
+    <Folder Include="Views\Fast\" />
     <Folder Include="Views\Product\" />
     <Folder Include="Views\SelectorAction\" />
   </ItemGroup>
