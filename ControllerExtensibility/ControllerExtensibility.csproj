@@ -98,6 +98,7 @@
     <Compile Include="Controllers\CustomController.cs" />
     <Compile Include="Controllers\FastController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\RemoteDataController.cs" />
     <Compile Include="Controllers\SelectorActionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -106,6 +107,7 @@
     <Compile Include="Infrastructure\CustomControllerActivator.cs" />
     <Compile Include="Infrastructure\CustomControllerFactory.cs" />
     <Compile Include="Infrastructure\LocalAttribute.cs" />
+    <Compile Include="Models\RemoteService.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -126,6 +128,7 @@
     <Folder Include="Views\Custom\" />
     <Folder Include="Views\Fast\" />
     <Folder Include="Views\Product\" />
+    <Folder Include="Views\RemoteData\" />
     <Folder Include="Views\SelectorAction\" />
   </ItemGroup>
   <PropertyGroup>
