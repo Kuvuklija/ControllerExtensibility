@@ -1,4 +1,5 @@
 ﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace ControllerExtensibility.Models
 {
@@ -7,5 +8,12 @@ namespace ControllerExtensibility.Models
             Thread.Sleep(2000);
             return "Hello from the other side of the world";
         }
+    
+    public async Task<string> GetRemoteDataAsync() {
+        return await Task<string>.Factory.StartNew(() => {
+            Thread.Sleep(2000);
+            return "Hello from the other side of the world";
+        }); 
     }
+  }
 }
