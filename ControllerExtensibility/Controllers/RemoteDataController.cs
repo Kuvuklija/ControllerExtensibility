@@ -8,6 +8,7 @@ namespace ControllerExtensibility.Controllers
     
         public async Task<ActionResult> Data() {
 
+            //RemoteService service = new RemoteService();
             //string data = service.GetRemoteData();
 
             string data = await Task<string>.Factory.StartNew(()=> {
